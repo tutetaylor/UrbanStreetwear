@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de talles — Urban Streetwear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<header>
+  <nav class="nav-left">
+    <a href="index.html#catalogo">Colecciones</a>
+    <a href="index.html#lookbook">Drops</a>
+    <a href="#footer">Info</a>
+  </nav>
+  <a href="index.html" class="logo">URBAN<span>°</span>STREETWEAR</a>
+  <div class="nav-right">
+    <button class="icon-btn" id="currency-toggle" type="button" aria-label="Cambiar moneda">ARS $</button>
+    <button class="icon-btn" id="search-toggle" type="button" aria-label="Buscar">🔍</button>
+    <button class="icon-btn" id="cart-toggle" type="button" aria-label="Ver carrito">🛒 <span class="cart-count">0</span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <a href="index.html" class="back-link">← Volver a la tienda</a>
+  <span class="eyebrow">Ayuda</span>
+  <h1>Guía de talles</h1>
+  <p>Todas las medidas están en centímetros, tomadas con la prenda extendida.</p>
+</section>
+
+<section class="content">
+  <h2>Remeras y hoodies</h2>
+  <table class="info-table">
+    <tr><th>Talle</th><th>Pecho</th><th>Largo</th><th>Manga</th></tr>
+    <tr><td>S</td><td>56</td><td>68</td><td>22</td></tr>
+    <tr><td>M</td><td>60</td><td>71</td><td>23</td></tr>
+    <tr><td>L</td><td>64</td><td>74</td><td>24</td></tr>
+    <tr><td>XL</td><td>68</td><td>77</td><td>25</td></tr>
+  </table>
+
+  <h2>Cargos y pantalones</h2>
+  <table class="info-table">
+    <tr><th>Talle</th><th>Cintura</th><th>Cadera</th><th>Largo total</th></tr>
+    <tr><td>S</td><td>76</td><td>98</td><td>102</td></tr>
+    <tr><td>M</td><td>82</td><td>104</td><td>104</td></tr>
+    <tr><td>L</td><td>88</td><td>110</td><td>106</td></tr>
+    <tr><td>XL</td><td>94</td><td>116</td><td>108</td></tr>
+  </table>
+
+  <h2>¿Cómo medirte?</h2>
+  <ul>
+    <li><strong>Pecho:</strong> rodeá la parte más ancha del torso, con la cinta paralela al piso.</li>
+    <li><strong>Cintura:</strong> medí justo por encima del ombligo.</li>
+    <li><strong>Cadera:</strong> rodeá la parte más ancha de la cadera.</li>
+  </ul>
+  <p>¿Estás entre dos talles? Nuestros cortes son oversize — si te gusta el calce más ajustado, elegí el talle menor.</p>
+</section>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="index.html#catalogo">Colecciones</a>
+        <a href="index.html#lookbook">Lookbook</a>
+        <a href="drops-anteriores.html">Drops anteriores</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="envios.html">Envíos</a>
+        <a href="cambios-devoluciones.html">Cambios y devoluciones</a>
+        <a href="guia-talles.html">Guía de talles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Marca</h4>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="https://instagram.com/urbanstreetwear" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h4>Newsletter</h4>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Unete al club" required>
+        <button type="submit" aria-label="Suscribirse">→</button>
+      </form>
+      <span class="newsletter-note">¡Listo! Ya sos parte del club — mirá tu correo.</span>
+    </div>
+  </div>
+
+  <div class="brand-line">URBAN STREETWEAR</div>
+
+  <div class="footer-bottom">
+    <span>© 2026 URBAN STREETWEAR — TODOS LOS DERECHOS RESERVADOS</span>
+    <span>BUENOS AIRES, ARG</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search-input" placeholder="Buscar prendas — hoodie, cargo, bomber, tee…" autocomplete="off">
+    <button class="search-close" id="search-close" type="button" aria-label="Cerrar búsqueda">✕</button>
+  </div>
+  <div class="search-results" id="search-results">
+    <p class="search-hint">Empezá a escribir para ver resultados del catálogo.</p>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h3>Tu carrito</h3>
+    <button class="cart-close" id="cart-close" type="button" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
+    <button class="cta cart-checkout" id="cart-checkout" type="button" disabled>FINALIZAR COMPRA</button>
+    <span class="cart-note" id="cart-note">¡Listo! Pedido confirmado — te llega un mail con el resumen.</span>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
